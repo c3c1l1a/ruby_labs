@@ -1,7 +1,7 @@
 =begin	
 METAPROGRAMMING IS CODE THAT WRITES CODE 
 - Do not misuse metaprogrammng (how to know when to use metaprogramming)
-- Meta programming means you can define classes and methods duing runtime
+- Meta programming means you can define classes and methods during runtime (defining new code at runtime)
 - Example of metaprogramming 
 	- Reopening clases
 	- Using the metaclass
@@ -12,7 +12,9 @@ METAPROGRAMMING IS CODE THAT WRITES CODE
 	class methods and singletone methods
 - Diference between class methods and singletone methods is that class methods 
 	are available to all instances of a class object while singleton methods are available only to that single instance.
-- 
+REFLECTION
+- Lets us as question about itself have modify itself at runtime
+
 =end
 
 #SHIFTING SELF
@@ -74,22 +76,5 @@ Myself.instance_eval do
 	end
 end
 
-#print Myself.methods
 
-
-class A
-	attr_accessor :a
-  def initialize
-    @a = 11
-    @@a = 22
-    a = 33
-  end
-  @a = 1
-  @@a = 2
-  a = 3
-end
-
-inst = A.new
-puts inst.a
-puts A.
 

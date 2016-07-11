@@ -1,5 +1,6 @@
 require_relative 'metaprogramming'
 require_relative 'traversals'
-require 'test/unit'
+require_relative 'mixins_and_ducktypes'
+
 
 

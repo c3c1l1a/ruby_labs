@@ -21,4 +21,8 @@ class Human
 	#include Traits # module methods used as instance methods
 	#extend traits  # module methods used as class methods
 	#include Traits # Module methods mixed as both class and instance methods
+	
+	#def initialize
+	#	self.extend Traits # this adds the methods in Traits as instance methods (Mimicks include. Don't use this approach)
+	#end 
 end 

@@ -16,12 +16,18 @@ class TestMixins < Test::Unit::TestCase
 	#	assert_equal(Human.eating, "Eating")
 	#end
 
-	def testIncludingBothInstanceAndClassMethods
-		human = Human.new
-		assert_equal(human.walking, "Walking")
-		assert_equal(human.eating, "Eating")
-		assert_equal(Human.sitting, "Sitting")
-	end
+	#def testIncludingBothInstanceAndClassMethods
+	#	human = Human.new
+	#	assert_equal(human.walking, "Walking")
+	#	assert_equal(human.eating, "Eating")
+	#	assert_equal(Human.sitting, "Sitting")
+	#end
+
+	#def testInstanceMethodMixinWithExtendAndNotInclude
+	#	human = Human.new
+	#	assert_equal(human.walking, "Walking")
+	#	assert_equal(human.eating, "Eating")
+	#end 
 end
 
 

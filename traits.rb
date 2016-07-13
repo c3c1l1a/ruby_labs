@@ -7,10 +7,10 @@ module Traits
 		"Eating"
 	end
 
-	def self.included(base)
+	def self.included(base) # base is the target class
 		base.extend(ClassMethods)
 	end
-	
+
 	module ClassMethods
 		def sitting
 			"Sitting"
